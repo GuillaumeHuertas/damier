@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'damier';
+  title = 'Le Damier';
+
+  lignes = Array(8);
+  colones = Array(8);
+
+  statusBW = true;
+
+  bandw() {
+    if (this.statusBW == false) {
+      this.statusBW = true;
+    } else {
+      this.statusBW = false;
+    }
+  }
 }
