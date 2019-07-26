@@ -14,10 +14,13 @@ export class AppComponent {
   statusBW = true;
 
   bandw() {
-    if (this.statusBW == false) {
-      this.statusBW = true;
-    } else {
-      this.statusBW = false;
-    }
+    this.statusBW = this.statusBW == false ? true : false; 
+
+    //if (this.statusBW == false) {
+    //  this.statusBW = true;
+    //} else {
+    //  this.statusBW = false;
+    //}
+    
   }
 }
